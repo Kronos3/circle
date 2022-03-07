@@ -111,7 +111,3 @@ add_link_options(
 
 add_subdirectory(lib)
 add_subdirectory(addon)
-
-# Samples
-add_subdirectory(sample/01-gpiosimple)
-add_subdirectory(addon/wlan/sample/hello_wlan)
