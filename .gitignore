@@ -84,6 +84,9 @@ $RECYCLE.BIN/
 Config.mk
 Config2.mk
 
+cmake-build-*/*
+
+
 # Directories
 # ----------------------------------------------
 doc/html/
