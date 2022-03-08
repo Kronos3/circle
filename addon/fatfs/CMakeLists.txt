@@ -6,3 +6,4 @@ add_library(fatfs
         ffconf.h
         ffsystem.cpp
         ffunicode.c)
+target_link_libraries(fatfs circle)
