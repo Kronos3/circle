@@ -6,4 +6,4 @@ add_library(fatfs
         ffconf.h
         ffsystem.cpp
         ffunicode.c)
-target_link_libraries(fatfs circle)
+target_link_libraries(fatfs sdcard usb fs circle)

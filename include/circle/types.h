@@ -61,4 +61,7 @@ typedef char		boolean;
 #endif
 ASSERT_STATIC (sizeof (boolean) == 1);
 
+typedef float f32;
+typedef double f64;
+
 #endif
