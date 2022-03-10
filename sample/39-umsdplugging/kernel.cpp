@@ -19,7 +19,7 @@
 //
 #include "kernel.h"
 #include <circle/device.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/util.h>
 #include <assert.h>
 

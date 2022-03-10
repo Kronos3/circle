@@ -22,7 +22,7 @@
 #include "primetask.h"
 #include "ledtask.h"
 #include <profile/profiler.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <assert.h>
 
 #define PARTITION	"emmc1-1"

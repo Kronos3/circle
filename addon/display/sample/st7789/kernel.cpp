@@ -18,7 +18,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 #include "kernel.h"
-#include <circle/string.h>
+#include <circle/circle_string.h>
 
 #define SPI_MASTER_DEVICE	0		// 0, 4, 5, 6 on Raspberry Pi 4; 0 otherwise
 #define SPI_CLOCK_SPEED		15000000	// Hz

@@ -21,7 +21,7 @@
 #include <circle/usb/usb.h>
 #include <circle/netdevice.h>
 #include <circle/macaddress.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/synchronize.h>
 #include <circle/macros.h>
 #include <circle/debug.h>

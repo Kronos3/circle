@@ -21,7 +21,7 @@
 #include <circle/chainboot.h>
 #include <circle/logger.h>
 #include <circle/machineinfo.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/util.h>
 #include <circle/version.h>
 #include <assert.h>

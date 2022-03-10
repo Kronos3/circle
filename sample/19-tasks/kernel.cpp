@@ -21,7 +21,7 @@
 #include "screentask.h"
 #include "primetask.h"
 #include "ledtask.h"
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <assert.h>
 
 static const char FromKernel[] = "kernel";

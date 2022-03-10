@@ -18,7 +18,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 #include "kernel.h"
-#include <circle/string.h>
+#include <circle/circle_string.h>
 
 #define PARTITION	"emmc1-1"
 #define FILENAME	"circle.txt"

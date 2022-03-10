@@ -1,6 +1,6 @@
 #include "p9cmd.h"
 #include "p9error.h"
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <assert.h>
 
 void cmderror (Cmdbuf *cb, const char *err)

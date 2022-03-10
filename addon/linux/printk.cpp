@@ -1,6 +1,6 @@
 #include <linux/printk.h>
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/stdarg.h>
 #include <circle/util.h>
 

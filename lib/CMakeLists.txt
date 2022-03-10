@@ -7,7 +7,7 @@ set(CIRCLE_SRCS
         logger.cpp machineinfo.cpp multicore.cpp nulldevice.cpp ptrarray.cpp ptrlist.cpp
         pwmoutput.cpp pwmsoundbasedevice.cpp pwmsounddevice.cpp qemu.cpp screen.cpp serial.cpp
         soundbasedevice.cpp spimaster.cpp spimasteraux.cpp spimasterdma.cpp spinlock.cpp
-        string.cpp sysinit.cpp time.cpp timer.cpp tracer.cpp usertimer.cpp util.cpp
+        circle_string.cpp sysinit.cpp time.cpp timer.cpp tracer.cpp usertimer.cpp util.cpp
         util_fast.S virtualgpiopin.cpp chainboot.cpp macaddress.cpp netdevice.cpp
         new.cpp heapallocator.cpp pageallocator.cpp setjmp.S numberpool.cpp
         latencytester.cpp writebuffer.cpp 2dgraphics.cpp

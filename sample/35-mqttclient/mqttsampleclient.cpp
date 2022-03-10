@@ -20,7 +20,7 @@
 #include "mqttsampleclient.h"
 #include <circle/bcmpropertytags.h>
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/timer.h>
 #include <circle/util.h>
 

@@ -12,7 +12,7 @@
 #include <OneWire/ds18x20.h>
 #include <circle/timer.h>
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/util.h>
 #include <assert.h>
 

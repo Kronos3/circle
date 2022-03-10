@@ -30,7 +30,7 @@
 #include <circle/net/netsubsystem.h>
 #include <circle/net/socket.h>
 #include <circle/ptrlist.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/timer.h>
 #include <circle/types.h>
 

@@ -23,7 +23,7 @@
 #include <circle/sched/taskswitch.h>
 #include <circle/sched/synchronizationevent.h>
 #include <circle/sysconfig.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 enum TTaskState

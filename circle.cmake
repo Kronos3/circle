@@ -1,10 +1,3 @@
-# CMake options
-set(AARCH 32 CACHE STRING "Build 32-bit or 64-bit Raspberry image")
-set(RASPPI 3 CACHE STRING "Raspberry Pi Model to build for")
-option(ARM_ALLOW_MULTI_CORE "Allow multiple cores to execute on the Raspberry Pi" ON)
-
-set(FLOAT_ABI "hard" CACHE STRING "Hardware (hard) or Software (softfp) floating point ABI")
-
 # Set up the board specific features
 if (AARCH EQUAL 32)
     set(ARCH_CFLAGS -DAARCH=32)
@@ -47,7 +40,7 @@ set(CMAKE_CXX_STANDARD 14)
 message(STATUS "Architecture flags: ${ARCH_CFLAGS}")
 add_compile_options("${ARCH_CFLAGS}")
 add_compile_options(-O2 -Wall -fsigned-char -ffreestanding)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-aligned-new -fno-exceptions -fno-rtti -nostdinc++")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-aligned-new -fno-exceptions -fno-rtti")
 add_compile_definitions(
         __circle__ __unix__ __linux__
         RASPPI=${RASPPI}
@@ -85,7 +78,8 @@ add_link_options(
         ${ARCH_CFLAGS}
         -T ${LINKER_SCRIPT}
         -static
-        -nostdlib -nostartfiles -nostdinc
+        --specs=nosys.specs
+        -nostartfiles
         -ffreestanding
         -Wl,--section-start=.init=${LOADADDR}
 )

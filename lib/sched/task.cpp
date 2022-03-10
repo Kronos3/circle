@@ -36,9 +36,9 @@ CTask::CTask (unsigned nStackSize, boolean bCreateSuspended)
 
 	if (m_nStackSize != 0)
 	{
-		assert (m_nStackSize >= 1024);
+		assert (m_nStackSize >= 1024, m_nStackSize);
 #if AARCH == 32
-		assert ((m_nStackSize & 3) == 0);
+		assert ((m_nStackSize & 3) == 0, m_nStackSize);
 #else
 		assert ((m_nStackSize & 15) == 0);
 #endif

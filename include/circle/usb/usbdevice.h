@@ -25,7 +25,7 @@
 #include <circle/usb/usbfunction.h>
 #include <circle/numberpool.h>
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 #define USBDEV_MAX_FUNCTIONS	10

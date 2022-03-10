@@ -23,7 +23,7 @@
 #include <circle/debug.h>
 #include <circle/multicore.h>
 #include <circle/sysconfig.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/macros.h>
 #include <assert.h>
 

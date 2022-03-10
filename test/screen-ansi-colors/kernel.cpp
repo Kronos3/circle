@@ -21,7 +21,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 #include "kernel.h"
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/timer.h>
 #include <assert.h>
 

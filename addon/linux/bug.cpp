@@ -1,6 +1,6 @@
 #include <linux/bug.h>
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 
 void __warn (const char *file, const int line)
 {

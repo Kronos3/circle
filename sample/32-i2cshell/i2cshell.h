@@ -23,7 +23,7 @@
 #include <circle/input/console.h>
 #include <circle/usb/usbhcidevice.h>
 #include <circle/i2cmaster.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 #define I2CSHELL_MAX_LINE	500

@@ -24,6 +24,7 @@
 #include <circle/machineinfo.h>
 #include <circle/synchronize.h>
 #include <assert.h>
+#include <circle/actled.h>
 
 #ifndef USE_RPI_STUB_AT
 
@@ -364,7 +365,7 @@ boolean CSerialDevice::Initialize (unsigned nBaudrate,
 
 	PeripheralExit ();
 
-	CDeviceNameService::Get ()->AddDevice ("ttyS", m_nDevice+1, this, FALSE);
+//	CDeviceNameService::Get ()->AddDevice ("ttyS", m_nDevice+1, this, FALSE);
 
 	return TRUE;
 }

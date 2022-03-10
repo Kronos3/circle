@@ -20,7 +20,7 @@
 #ifndef _circle_time_h
 #define _circle_time_h
 
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 typedef signed long time_t;

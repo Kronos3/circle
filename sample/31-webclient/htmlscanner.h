@@ -20,7 +20,7 @@
 #ifndef _htmlscanner_h
 #define _htmlscanner_h
 
-#include <circle/string.h>
+#include <circle/circle_string.h>
 
 #define HTMLSCAN_MAXIMUM_ITEM	0x2000
 

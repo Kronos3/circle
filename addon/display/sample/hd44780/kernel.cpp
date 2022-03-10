@@ -21,7 +21,7 @@
 #include <circle/usb/usbkeyboard.h>
 #include <circle/input/keyboardbuffer.h>
 #include <circle/time.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/util.h>
 
 // LCD configuration

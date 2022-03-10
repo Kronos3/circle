@@ -22,7 +22,7 @@
 
 #include <circle/device.h>
 #include <circle/fs/partition.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 #define MAX_PARTITIONS		4

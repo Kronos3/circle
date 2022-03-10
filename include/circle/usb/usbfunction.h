@@ -24,7 +24,7 @@
 #include <circle/usb/usbconfigparser.h>
 #include <circle/usb/usb.h>
 #include <circle/usb/usbhub.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 class CUSBDevice;

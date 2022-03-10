@@ -23,7 +23,7 @@
 #include <circle/sched/task.h>
 #include <circle/net/netsubsystem.h>
 #include <circle/net/socket.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 enum TDHCPStatus

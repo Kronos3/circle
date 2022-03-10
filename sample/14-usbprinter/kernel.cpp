@@ -19,7 +19,7 @@
 //
 #include "kernel.h"
 #include <circle/usb/usbprinter.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 
 static const char FromKernel[] = "kernel";
 

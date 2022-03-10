@@ -18,7 +18,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 #include "kernel.h"
-#include <circle/string.h>
+#include <circle/circle_string.h>
 
 #define SPI_CHIP_SELECT		0		// 0 or 1
 

@@ -23,7 +23,7 @@
 #include <circle/synchronize.h>
 #include <circle/debug.h>
 #include <circle/sysconfig.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <assert.h>
 
 static const char FromExcept[] = "except";

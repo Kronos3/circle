@@ -21,7 +21,7 @@
 #include <circle/usb/usbhostcontroller.h>
 #include <circle/devicenameservice.h>
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <assert.h>
 
 static const char FromBluetooth[] = "btusb";

@@ -21,7 +21,7 @@
 #define _circle_usb_usbdevicefactory_h
 
 #include <circle/usb/usbfunction.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 #define USB_DEVICE(vendorid, deviceid)		vendorid, deviceid

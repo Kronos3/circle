@@ -39,7 +39,7 @@
 #include <circle/bcm2711.h>
 #include <circle/synchronize.h>
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/util.h>
 #include <circle/macros.h>
 #include <assert.h>

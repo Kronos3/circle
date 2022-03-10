@@ -22,7 +22,7 @@
 #include "primetask.h"
 
 #include <circle/sched/scheduler.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/util.h>
 
 // The CPU is given up after each YIELD_COUNT loop cycles, so that other

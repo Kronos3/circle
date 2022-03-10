@@ -23,7 +23,7 @@
 #include <circle/netdevice.h>
 #include <circle/macaddress.h>
 #include <circle/net/netqueue.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 #include "etherevent.h"
 

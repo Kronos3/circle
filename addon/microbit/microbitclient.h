@@ -21,7 +21,7 @@
 #define _microbit_microbitclient_h
 
 #include <circle/usb/usbserial.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 #define MICROBIT_OK		0

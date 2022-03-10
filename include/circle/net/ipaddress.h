@@ -20,7 +20,7 @@
 #ifndef _circle_net_ipaddress_h
 #define _circle_net_ipaddress_h
 
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 #define IP_ADDRESS_SIZE	4

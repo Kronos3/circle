@@ -24,7 +24,7 @@
 #include <circle/net/ipaddress.h>
 #include <circle/net/http.h>
 #include <circle/net/socket.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 class CHTTPClient

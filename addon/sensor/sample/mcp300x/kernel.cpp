@@ -18,7 +18,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 #include "kernel.h"
-#include <circle/string.h>
+#include <circle/circle_string.h>
 
 #define CHANNEL			0		// 0..7 (0..3 for MCP3004)
 #define VREF			3.3f		// Reference voltage (Volt)

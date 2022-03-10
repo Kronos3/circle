@@ -20,7 +20,7 @@
 #include "echoserver.h"
 #include <circle/net/in.h>
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <assert.h>
 
 static const char FromEcho[] = "echo";

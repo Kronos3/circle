@@ -23,7 +23,7 @@
 #include <circle/net/tftpdaemon.h>
 #include <circle/net/netsubsystem.h>
 #include <fatfs/ff.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 class CTFTPFatFsFileServer : public CTFTPDaemon

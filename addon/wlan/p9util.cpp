@@ -1,6 +1,6 @@
 #include "p9util.h"
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/stdarg.h>
 #include <circle/debug.h>
 #include <assert.h>

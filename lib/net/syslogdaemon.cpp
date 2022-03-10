@@ -22,7 +22,7 @@
 #include <circle/net/syslogdaemon.h>
 #include <circle/net/in.h>
 #include <circle/sched/scheduler.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/synchronize.h>
 #include <circle/util.h>
 #include <assert.h>

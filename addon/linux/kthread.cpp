@@ -2,7 +2,7 @@
 #include <linux/bug.h>
 #include <circle/sched/task.h>
 #include <circle/sched/scheduler.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/stdarg.h>
 
 class CKThread : public CTask

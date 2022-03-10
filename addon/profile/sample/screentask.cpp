@@ -19,7 +19,7 @@
 //
 #include "screentask.h"
 #include <circle/sched/scheduler.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 
 CScreenTask::CScreenTask (unsigned nTaskID, CScreenDevice *pScreen)
 :	m_nTaskID (nTaskID),

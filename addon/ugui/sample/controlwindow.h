@@ -24,7 +24,7 @@
 #include "scopewindow.h"
 #include "recorder.h"
 #include "scopeconfig.h"
-#include <circle/string.h>
+#include <circle/circle_string.h>
 
 class CControlWindow
 {

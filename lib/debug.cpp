@@ -19,7 +19,7 @@
 //
 #include <circle/debug.h>
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/sysconfig.h>
 #include <circle/gpiopin.h>
 

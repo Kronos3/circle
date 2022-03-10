@@ -21,7 +21,7 @@
 #define _circle_timer_h
 
 #include <circle/interrupt.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/ptrlist.h>
 #include <circle/sysconfig.h>
 #include <circle/spinlock.h>

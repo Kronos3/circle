@@ -109,4 +109,8 @@ _start_secondary:
 
 #endif
 
+    .globl _fini
+_fini:
+    b _fini
+
 /* End */

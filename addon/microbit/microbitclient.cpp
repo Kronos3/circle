@@ -22,7 +22,7 @@
 #include <circle/sched/scheduler.h>
 #include <circle/synchronize.h>
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/util.h>
 #include <assert.h>
 

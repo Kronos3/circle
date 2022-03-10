@@ -18,7 +18,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 #include "scopewindow.h"
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <assert.h>
 
 #define WIDTH		600

@@ -25,7 +25,7 @@
 #include <circle/net/linklayer.h>
 #include <circle/net/networklayer.h>
 #include <circle/net/transportlayer.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 #define DEFAULT_HOSTNAME	"raspberrypi"

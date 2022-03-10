@@ -22,7 +22,7 @@
 
 #include <circle/sched/task.h>
 #include <circle/net/netsubsystem.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 
 class CNTPDaemon : public CTask
 {

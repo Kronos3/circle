@@ -51,5 +51,7 @@ SECTIONS
 		*(COMMON)
 
 		_end = .;
+		end = _end;
+
 	}
 }

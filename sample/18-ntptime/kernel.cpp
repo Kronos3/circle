@@ -19,7 +19,7 @@
 //
 #include "kernel.h"
 #include <circle/net/ntpdaemon.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 
 // Network configuration
 #define USE_DHCP

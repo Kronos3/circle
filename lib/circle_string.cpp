@@ -19,7 +19,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/util.h>
 
 #define FORMAT_RESERVE		64	// additional bytes to allocate

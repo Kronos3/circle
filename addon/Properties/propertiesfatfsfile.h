@@ -26,7 +26,7 @@
 
 #include <Properties/propertiesbasefile.h>
 #include <fatfs/ff.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/types.h>
 
 class CPropertiesFatFsFile : public CPropertiesBaseFile

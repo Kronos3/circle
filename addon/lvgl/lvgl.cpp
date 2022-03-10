@@ -22,7 +22,7 @@
 #include <circle/koptions.h>
 #include <circle/timer.h>
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/new.h>
 
 CLVGL *CLVGL::s_pThis = 0;

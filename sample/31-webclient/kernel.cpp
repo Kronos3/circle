@@ -23,7 +23,7 @@
 #include <circle/net/httpclient.h>
 #include <circle/net/ipaddress.h>
 #include <circle/machineinfo.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/util.h>
 #include <assert.h>
 

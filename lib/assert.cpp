@@ -19,7 +19,7 @@
 //
 #include <assert.h>
 #include <circle/logger.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/interrupt.h>
 #include <circle/synchronize.h>
 #include <circle/sysconfig.h>

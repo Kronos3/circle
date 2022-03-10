@@ -1,4 +1,4 @@
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <assert.h>
 #include "p9chan.h"
 #include "p9error.h"

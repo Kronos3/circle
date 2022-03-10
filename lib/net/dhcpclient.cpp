@@ -26,7 +26,7 @@
 #include <circle/logger.h>
 #include <circle/timer.h>
 #include <circle/util.h>
-#include <circle/string.h>
+#include <circle/circle_string.h>
 #include <circle/macros.h>
 #include <assert.h>
 
