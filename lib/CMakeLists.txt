@@ -35,8 +35,8 @@ if(NOT (RASPPI EQUAL 4))
     set(CIRCLE_SRCS ${CIRCLE_SRCS} bcmrandom.cpp interrupt.cpp)
 else()
     set(CIRCLE_SRCS ${CIRCLE_SRCS}
-            cm54213.o bcmpciehostbridge.o bcmrandom200.o interruptgic.o dma4channel.o
-            devicetreeblob.o)
+            cm54213.cpp bcmpciehostbridge.cpp bcmrandom200.cpp interruptgic.cpp dma4channel.cpp
+            devicetreeblob.cpp)
 endif()
 
 if (STDLIB_SUPPORT EQUAL 3)

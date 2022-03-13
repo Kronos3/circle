@@ -1,6 +1,5 @@
 # Set up the board specific features
 if (AARCH EQUAL 32)
-    set(ARCH_CFLAGS -DAARCH=32)
     set(LOADADDR 0x8000)
     if(RASPPI EQUAL 1)
         set(ARCH_CFLAGS ${ARCH_FLAGS} -mcpu=arm1176jzf-s -marm -mfpu=vfp -mfloat-abi=${FLOAT_ABI})
@@ -18,13 +17,12 @@ if (AARCH EQUAL 32)
         message(FATAL_ERROR "RASPPI must be 1, 2, 3, or 4: ${RASPPI}")
     endif()
 elseif(AARCH EQUAL 64)
-    set(ARCH_CFLAGS -DAARCH=64)
     set(LOADADDR 0x80000)
     if(RASPPI EQUAL 3)
-        set(ARCH_CFLAGS ${ARCH_FLAGS} -mcpu=cortex-a53 -mlittle-endian -mcmodel=small)
+        set(ARCH_CFLAGS ${ARCH_FLAGS} -mcpu=cortex-a53 -mlittle-endian)
         set(KERNEL_TARGET kernel8)
     elseif(RASPPI EQUAL 4)
-        set(ARCH_CFLAGS ${ARCH_FLAGS} -mcpu=cortex-a72 -mlittle-endian -mcmodel=small)
+        set(ARCH_CFLAGS ${ARCH_FLAGS} -mcpu=cortex-a72 -mlittle-endian)
         set(KERNEL_TARGET kernel8-rpi4)
     else()
         message(FATAL_ERROR "RASPPI must be 3, or 4 for 64-bit: ${RASPPI}")
@@ -63,7 +61,7 @@ function(build_elf NAME)
     target_link_libraries(${NAME} circle gcc m)
 
     set(HEX_FILE ${CMAKE_CURRENT_BINARY_DIR}/${NAME}.hex)
-    set(BIN_FILE ${CMAKE_CURRENT_BINARY_DIR}/${NAME}.bin)
+    set(BIN_FILE ${CMAKE_CURRENT_BINARY_DIR}/${KERNEL_TARGET}.img)
 
     add_custom_command(TARGET ${NAME} POST_BUILD
             COMMAND ${CMAKE_OBJCOPY} $<TARGET_FILE:${NAME}> -O ihex ${HEX_FILE}

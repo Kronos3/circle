@@ -21,7 +21,6 @@
 #define _assert_h
 
 #include <circle/macros.h>
-#include <Fw/Types/Assert.hpp>
 
 #ifdef __cplusplus
 extern "C" {
@@ -32,7 +31,9 @@ extern "C" {
 #else
 	void assertion_failed (const char *pExpr, const char *pFile, unsigned nLine) NORETURN;
 
-	#define assert FW_ASSERT
+	#define assert(expr)	(  likely (expr)	\
+				 ? ((void) 0)		\
+				 : assertion_failed (#expr, __FILE__, __LINE__))
 #endif
 
 #ifndef __cplusplus

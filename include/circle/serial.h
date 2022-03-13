@@ -55,7 +55,7 @@
 #define SERIAL_BUF_MASK		(SERIAL_BUF_SIZE-1)
 
 // serial options
-#define SERIAL_OPTION_ONLCR	(1 << 0)	///< Translate NL to NL+CR on output (default)
+//#define SERIAL_OPTION_ONLCR	(1 << 0)	///< Translate NL to NL+CR on output (default)
 
 // returned from Read/Write as negative value
 #define SERIAL_ERROR_BREAK	1
@@ -109,17 +109,15 @@ public:
 	/// \return Number of bytes received (0 no data available, < 0 on error)
 	int Read (void *pBuffer, size_t nCount);
 
-	/// \return Serial options mask (see serial options)
-	unsigned GetOptions (void) const;
-	/// \param nOptions Serial options mask (see serial options)
-	void SetOptions (unsigned nOptions);
-
 	typedef void TMagicReceivedHandler (void);
 	/// \param pMagic String for which is searched in the received data\n
 	/// (must remain valid after return from this method)
 	/// \param pHandler Handler which is called, when the magic string is found
 	/// \note Does only work with interrupt driver.
 	void RegisterMagicReceivedHandler (const char *pMagic, TMagicReceivedHandler *pHandler);
+
+    /// \brief Waits until all written bytes have been sent out
+    void Flush (void);
 
 protected:
 	/// \return Number of bytes buffer space available for Write()
@@ -133,9 +131,6 @@ protected:
 	/// \return Next received byte which will be returned by Read() (-1 if no data available)
 	/// \note Does only work with interrupt driver.
 	int Peek (void);
-
-	/// \brief Waits until all written bytes have been sent out
-	void Flush (void);
 
 private:
 	boolean Write (u8 uchChar);
@@ -165,8 +160,6 @@ private:
 	u8 m_TxBuffer[SERIAL_BUF_SIZE];
 	volatile unsigned m_nTxInPtr;
 	volatile unsigned m_nTxOutPtr;
-
-	unsigned m_nOptions;
 
 	const char *m_pMagic;
 	const char *m_pMagicPtr;

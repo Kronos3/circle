@@ -28,6 +28,7 @@
 
 #ifndef NDEBUG
 
+#if 0
 void assertion_failed (const char *pExpr, const char *pFile, unsigned nLine)
 {
 	uintptr ulStackPtr;
@@ -52,5 +53,7 @@ void assertion_failed (const char *pExpr, const char *pFile, unsigned nLine)
 
 	for (;;);
 }
+
+#endif
 
 #endif
