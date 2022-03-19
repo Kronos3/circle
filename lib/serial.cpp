@@ -24,7 +24,6 @@
 #include <circle/machineinfo.h>
 #include <circle/synchronize.h>
 #include <assert.h>
-#include <circle/actled.h>
 
 #ifndef USE_RPI_STUB_AT
 
@@ -161,6 +160,7 @@ CSerialDevice::CSerialDevice (CInterruptSystem *pInterruptSystem, boolean bUseFI
 	m_nRxStatus (0),
 	m_nTxInPtr (0),
 	m_nTxOutPtr (0),
+	m_nOptions (SERIAL_OPTION_ONLCR),
 	m_pMagic (0),
 	m_SpinLock (bUseFIQ ? FIQ_LEVEL : IRQ_LEVEL)
 #ifdef REALTIME
@@ -395,7 +395,17 @@ int CSerialDevice::Write (const void *pBuffer, size_t nCount)
 			break;
 		}
 
-		pChar++;
+		if (*pChar++ == '\n')
+		{
+			if (m_nOptions & SERIAL_OPTION_ONLCR)
+			{
+				if (!Write ('\r'))
+				{
+					break;
+				}
+			}
+		}
+
 		nResult++;
 	}
 
@@ -517,6 +527,16 @@ int CSerialDevice::Read (void *pBuffer, size_t nCount)
 	}
 
 	return nResult;
+}
+
+unsigned CSerialDevice::GetOptions (void) const
+{
+	return m_nOptions;
+}
+
+void CSerialDevice::SetOptions (unsigned nOptions)
+{
+	m_nOptions = nOptions;
 }
 
 void CSerialDevice::RegisterMagicReceivedHandler (const char *pMagic, TMagicReceivedHandler *pHandler)
